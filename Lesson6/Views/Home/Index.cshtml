@@ -1,0 +1,27 @@
+﻿@model HelloWorldModel;
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["MenuName"] = "Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, @Model.Text</h1>
+    <p>@ViewData["Message"], Text + @ViewBag.text_another!</p>
+</div>
+
+<script>
+    console.log("Hello world!");
+</script>
+
+@section Scripts
+{
+    <script>
+    console.log("Hello world 2!");
+    </script>
+}
+
+@section Footer
+{
+    Наш копирайтинг
+}
